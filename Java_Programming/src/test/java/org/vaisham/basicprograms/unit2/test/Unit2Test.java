@@ -111,7 +111,7 @@ public class Unit2Test {
 	public void testEncode3() {
 		Unit2 unit2 = new Unit2();
 		
-		Assert.assertEquals("zzz", unit2.encode("262626"));
+		Assert.assertEquals("262626", unit2.encode("zzz"));
 	}
 	
 	@Test
