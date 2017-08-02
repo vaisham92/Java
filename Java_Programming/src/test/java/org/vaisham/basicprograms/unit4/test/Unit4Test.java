@@ -80,9 +80,9 @@ public class Unit4Test {
 
     @Test
     public void testisEqualString3() {
-        char[] input1 = null;
-        char[] input2 = null;
-        Assert.assertEquals(true, unit4.isEqual(new String(input1), new String(input2)));
+        String input1 = null;
+        String input2 = null;
+        Assert.assertEquals(true, unit4.isEqual(input1, input2));
     }
 
     @Test
@@ -101,20 +101,6 @@ public class Unit4Test {
 
     @Test
     public void testisEqualString6() {
-        char[] input1 = null;
-        char[] input2 = {' '};
-        Assert.assertEquals(false, unit4.isEqual(new String(input1), new String(input2)));
-    }
-
-    @Test
-    public void testisEqualString7() {
-        char[] input1 = {};
-        char[] input2 = null;
-        Assert.assertEquals(false, unit4.isEqual(new String(input1), new String(input2)));
-    }
-
-    @Test
-    public void testisEqualString8() {
         char[] input1 = {'a', 'p', 'p', 'l', 'e'};
         char[] input2 = {'a', 'p', 'p', 'l', 'e'};
         Assert.assertEquals(true, unit4.isEqual(new String(input1), new String(input2)));
